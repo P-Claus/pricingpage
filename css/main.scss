@@ -10,12 +10,18 @@ body {
 }
 
 .main-section {
-    height:60%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
     width: 80%;
     background-color: white;
     margin: 5em;
     border-radius: 5em;
     border: 1px solid black;
+    
+   
+
+    
 }
 
 .title-section {
@@ -44,14 +50,16 @@ body {
 .card-section {
 
     display: flex;
-    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 1;
 
     .card {
         border: 1px solid black;
         height: 370px;
-        width: 250px;
+        min-width: 250px;
         
-        margin: 4em;
+        margin: 2em;
         border-radius: 3em;
         text-align: center;
 
@@ -99,5 +107,6 @@ body {
             
         }
     }
-
 }
+
+
